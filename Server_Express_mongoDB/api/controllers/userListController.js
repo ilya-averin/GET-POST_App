@@ -11,7 +11,7 @@ exports.list_all_users = function (req, res) {
 				res.send(err);
 		res.json(user);
 	});
-//missed semicolumn
+
 };
 
 exports.create_a_user = function (req, res) {
