@@ -25,5 +25,4 @@ var UserSchema = new Schema({
 
 });
 
-//one o instead of 2
 module.exports = mongoose.model('Users', UserSchema);
