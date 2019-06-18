@@ -22,7 +22,7 @@ exports.create_a_user = function (req, res) {
 				res.send(err);
 		res.json(user);
 	});
-//missed semicolumn
+
 
 };
 
