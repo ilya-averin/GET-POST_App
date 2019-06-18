@@ -1,12 +1,11 @@
 var express = require('express'),
-		app = express(),
-		port = process.env.PORT || 3000,
-		mongoose = require('mongoose'),
-		User = require('./api/models/userListModel'),
-		bodyParser = require('body-parser');
+	app = express(),
+	port = process.env.PORT || 3000,
+	mongoose = require('mongoose'),
+	User = require('./api/models/userListModel'),
+	bodyParser = require('body-parser');
 
-// mongoose.Promise = global.Promise;
-//userdb not users
+
 mongoose.connect('mongodb://localhost:27017/Userdb', { useNewUrlParser: true })
 .then(() => {
 	console.log("Connected to Database");
